@@ -69,6 +69,7 @@ function chekoutNumber(j) {
 console.log(`${j} в кубе равняется`, `${chekoutNumber(j)}`);
 */
 //задача 7
+/*
 let r1 = Number(prompt(`Введите радиус первой окружности`));
 let r2 = Number(prompt(`Введите радиус второй окружности`));
 
@@ -97,3 +98,13 @@ console.log(circle2.area());
 
 console.log(`При значении радиуса окружности ${r1}, длина ее составит - , ${circle1.length()},, а площадь - ${circle1.area()}.`);
 console.log(`При значении радиуса окружности ${r2}, длина ее составит - , ${circle2.length()},, а площадь - ${circle2.area()}.`);
+*/
+//задание 8 к сайту//
+function gameOne() {
+    let mN = Number(prompt(`Введите пожалуйста номер месяца`));
+    if (mN >= 1 && mN <= 2 || mN === 12 ) {return console.log(`Это зима`);} 
+    else if (mN >= 3 && mN <= 5 ) {return console.log(`Это весна`);}
+    else if (mN >= 6 && mN <= 8 ) {return console.log(`Это лето`);}
+    else if (mN >= 9 && mN <= 11 ) {return console.log(`Это осень`);}
+    else if (isNaN(mN) === true ) {return console.log(`Вы явно что то попутали, такого нет:)`);}   
+}

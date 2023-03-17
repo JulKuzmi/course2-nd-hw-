@@ -82,6 +82,20 @@ body {
     justify-content: center;
 }
 
+.mini{
+    background-image: url(img/backgr3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #000915;
+}
+
+.picture{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
 @media (max-width:767px){
     .center{
         padding-left: 16px;
