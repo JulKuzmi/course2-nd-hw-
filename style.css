@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.header {
+    height: 1024px;
+    background-image: url(img/backgr1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head_title {
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    padding-top: 217px;
+    padding-left: 120px;
+    padding-right: 531px;
+}
+
+.head_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-left: 120px;
+    padding-top: 32px;
+    padding-right: 838px;
+}
+
+.head_button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    background: #9C0332;
+    border-radius: 30px; 
+    width: 234.06px;
+    height: 48.6px;
+    color: #FFFFFF;
+    margin-left: 120px;
+    margin-top: 44px;
+
+}
+
+.section_game {
+    background-image: url(img/backgr2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #000915;
+}
+
+.img_game {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+    border-radius: 16px;
+    width: 100%;
+}
+
+.content_games {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
