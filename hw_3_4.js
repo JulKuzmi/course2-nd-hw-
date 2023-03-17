@@ -1,5 +1,4 @@
 /*
-//hw-3
 // задание 1 
 let password =prompt('Введите пароль');
 if (password==='мой пароль') {
@@ -23,14 +22,13 @@ if (d < 100 || e > 200) {
 } else {
    console.log('Неверно'); 
 }
-//задача 4 ?
+//задача 4 
 let a = '2';
 let b = '3';
 /*alert(a + b);*/
 alert(a=b=5);
 // задача 5
-
-let monthNumber = String(prompt('Ведите номер месяца'));
+/*let monthNumber = String(prompt('Ведите номер месяца'));
 monthNumber = monthNumber.toLocaleLowerCase();
 switch (monthNumber) {
     case '1':
@@ -74,8 +72,7 @@ switch (monthNumber) {
         alert('Такого не существует');
         break;
 }
-
-//hw4
+/*
 //задача1
 let i =0;
 do {
@@ -115,5 +112,4 @@ for (let dayNumber =1; dayNumber <=31; dayNumber++) {
    if (dayNumber % 7 ===0) {
     console.log (Сегодня пятница, ${dayNumber}-е, число. Необходимо подготоваить отчет.);
    }
-    
-}
+}*/
