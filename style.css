@@ -81,3 +81,47 @@ body {
     gap: 32px;
     justify-content: center;
 }
+
+@media (max-width:767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .head_title{
+        font-size: 32px;
+        line-height: 39px;
+        font-weight: 700;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head_text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head_buttom{
+        margin-left: 71px;
+        margin-right: 71px;
+        margin-top: 33px;
+    }
+
+    .content_games{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
