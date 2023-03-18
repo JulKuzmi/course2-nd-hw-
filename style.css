@@ -10,6 +10,7 @@ a {
 
 body {
     font-family: "Montserrat", sans-serif;
+    background: #000915;
 }
 
 .center{
@@ -33,7 +34,8 @@ body {
     line-height: 78px;
     padding-top: 217px;
     padding-left: 120px;
-    padding-right: 531px;
+    display: flex;
+    align-items: center;
 }
 
 .head_text {
@@ -44,7 +46,6 @@ body {
     color: #FFFFFF;
     padding-left: 120px;
     padding-top: 32px;
-    padding-right: 838px;
 }
 
 .head_button {
@@ -75,6 +76,13 @@ body {
     border-radius: 16px;
     width: 100%;
 }
+.bottom_text{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
 
 .content_games {
     display: flex;
@@ -90,13 +98,18 @@ body {
     background: #000915;
 }
 
-.picture{
+.mini_game{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.picture_img{
+    background: #000915;
 
 }
 
-@media (max-width:767px){
+
+@media (max-width: 768px){
     .center{
         padding-left: 16px;
         padding-right: 16px;
@@ -106,8 +119,6 @@ body {
         font-size: 32px;
         line-height: 39px;
         font-weight: 700;
-        padding-left: 16px;
-        padding-right: 16px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -115,13 +126,8 @@ body {
 
     .head_text{
         font-weight: 300;
-        font-size: 14px;
-        line-height: 22px;
-        padding-left: 16px;
-        padding-right: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     .head_buttom{
@@ -137,5 +143,4 @@ body {
         padding-left: 16px;
         padding-right: 16px;
     }
-
 }

@@ -12,6 +12,12 @@ function numb(a,c) {
     }
 }
 console.log(numb(a,c));*/
+//стрелочная функция 
+/*let  a = Number(prompt(`Введи первое число`));
+let  z = Number(prompt(`Введи второе число`));
+let numbers =(a, z) => (a < z) ? a : z;
+console.log(numbers(a,z));
+*/
 // задача 2
 /*let f = Number(prompt(`Введите любое число`));
 function evenOrEdd(c) {
