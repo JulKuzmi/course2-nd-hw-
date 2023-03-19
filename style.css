@@ -11,6 +11,7 @@ a {
 body {
     font-family: "Montserrat", sans-serif;
     background: #000915;
+    /*min-width: 1600px;*/
 }
 
 .center{
@@ -20,6 +21,7 @@ body {
 
 .header {
     height: 1024px;
+    max-width: 1440px;
     background-image: url(img/backgr1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -102,38 +104,37 @@ body {
 .container_card_3{
     background-image: url(img/game3.jpg);
 }
-.mini{
+
+/* section game season*/
+
+.seasons{
     background-image: url(img/backgr3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background: #000915;
 }
-
-.mini_game{
+.content{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1440px;
+    height: 800px;
+
+}
+.picture{
+    display: flex;
+    gap: 135px;
 }
 
-.picture_img{
-    background: #000915;
+/*адаптив сайта*/ /*планшетка*/ 
 
-}
-
-
-@media (max-width: 768px){
-    .center{
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
+@media (max-width: 833px){
+    
     .head_title{
-        font-size: 32px;
-        line-height: 39px;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        font-size: 78px;
+        line-height: 65px;
     }
 
     .head_text{
@@ -142,17 +143,60 @@ body {
         line-height: 32px;
     }
 
-    .head_buttom{
+    .head_button{
         margin-left: 71px;
         margin-right: 71px;
         margin-top: 33px;
     }
 
-    .content_games{
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
+}
+
+/*мобильная версия*/
+
+@media (max-width: 768px){
+    .head_title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .head_text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .head_title__info{
+        padding-left: 64px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head_text__info{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .picture{
+        width: 344px;
+        height: 236px;
     }
 }
