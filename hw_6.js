@@ -1,6 +1,6 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let a = 0; a < numbs.length; a++) {
-  if (numbs[a] === 10) break;
+  if (numbs[a] === 0) break;
   console.log(numbs[a]);
 }
 //2
@@ -8,6 +8,11 @@ const a = [1, 5, 4, 10, 0, 3];
 a.forEach((el, index) => {
   console.log(`${index}: ${el}`);
 }); //выдедет 4 стоит под 2 позицией/ индексом 
+
+//2 changed
+const u = [1, 5, 4, 10, 0, 3];
+console.log(u.indexOf(4));
+
 //3
 const c = [1, 3, 5, 10, 20];
 console.log(c.join(' '));
@@ -18,6 +23,14 @@ let ess =[
   [1, 1, 1],
 ]
 console.log(ess);
+//4 changed 
+let f = [];
+for (let i = 0; i < 3; i++) {
+  f[i] = []; 
+  for (let j = 0; j < 1; j++) {
+    f[i].push(j + 0); 
+  }
+}
 //5
 let i = ['1', '1', '1'];
 i.push(2, 2, 2);
@@ -30,23 +43,19 @@ console.log(sort);
 sort = sort.pop();
 console.log(sort);
 
-
-//7????
-let hmm = [9, 8, 7, 6, 5]; //
-let num = a.includes(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-console.log(num);
+//7
+/*let user =prompt('введите число от 1-10');
+let numbers = [9, 8, 7, 6, 5];
+let results = numbers.includes(1,2,3,4,5,6,7,8,9,10);
+console.log();// на все выводит false
+*/
+//7
 
 //8
 const str = 'abcdef';
 const reverse = str.split('').reverse().join('');
 console.log(reverse);
 //9
-let arr =[
-  [1,2,3,],
-  [4,5,6],
-];
-console.log(...arr)
-//2 var
 let arr2 =[[1, 2, 3,],[4, 5, 6]];
 arr2.flat();
 console.log(arr2.flat());
@@ -68,3 +77,7 @@ console.log(wordsN);
 const tasks =[1, 3, 5, 7];
 let tasksA = tasks.map(item => -item);
 console.log(tasksA);
+//13 changed
+const filtr =[1, -2, 3, -8];
+const result = filtr.filter(item => item <-1);
+console.log(result);
