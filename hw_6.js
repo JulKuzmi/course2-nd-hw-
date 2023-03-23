@@ -1,7 +1,7 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let a = 0; a < numbs.length; a++) {
-  if (numbs[a] === 0) break;
   console.log(numbs[a]);
+if (numbs[a] === 10) break;
 }
 //2
 const a = [1, 5, 4, 10, 0, 3];
@@ -44,13 +44,10 @@ sort = sort.pop();
 console.log(sort);
 
 //7
-/*let user =prompt('введите число от 1-10');
+let user =prompt('введите число от 1-10');
 let numbers = [9, 8, 7, 6, 5];
-let results = numbers.includes(1,2,3,4,5,6,7,8,9,10);
-console.log();// на все выводит false
-*/
-//7
-
+let results = numbers.includes(Number(user));
+console.log(results);
 //8
 const str = 'abcdef';
 const reverse = str.split('').reverse().join('');
