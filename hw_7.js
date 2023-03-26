@@ -1,7 +1,9 @@
-//1 ЗАДАЧА
+/*
+1 задача
 let str = 'js';
 str = str.toUpperCase();
 console.log(str); 
+*/
 
 //2 ЗАДАЧА
 const words = ['примитивы как объекты', 'сдать домашку', 'встроенные объекты', 'объект', 'шпаргалка'];
@@ -68,9 +70,14 @@ console.log(currentDate.setDate(currentDate.getDate()+ date));
 const today = new Date();
 //добавляем к текущей 73 дня
 console.log(today.setDate(today.getDate() + 73));
+
 //TASKS10
-//Написать функцию, которая на вход принимает дату, а возвращает ее отображение в виде:
-//Дата: <число> <месяц на русском> <год> - это <день недели на русском>.
-//Время: <часы>:<минуты>:<секунды>
-//Время, которое будет выведено, также хранится в объекте Date.
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь"];
+let mDate = new Date();
+let fullDate = "Дата: " + mDate.getDate()+ " " + months[mDate.getMonth()]+ " " + mDate.getFullYear()+ "-это"+ " " + days[mDate.getDay()];
+let hour = myDate.getHours();
+let minute = myDate.getMinutes();
+let second = myDate.getSeconds();
+console.log(fullDate+",Время: " + hour + ":" + minute + ":" + second);
 
