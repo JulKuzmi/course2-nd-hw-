@@ -127,6 +127,29 @@ body {
     gap: 135px;
 }
 
+.remember{
+    background-image: url(img/backgr4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #000915;
+}
+
+.content_remember{
+    max-width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.pictureTwo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 /*адаптив сайта*/ /*планшетка*/ 
 
 @media (max-width: 833px){
@@ -181,6 +204,7 @@ body {
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .head_title__info{
         padding-left: 64px;
         font-style: normal;
@@ -201,8 +225,35 @@ body {
         text-align: center;
     }
 
+    .remember_title{
+        padding-left: 64px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .remember_text{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
     .picture{
         width: 344px;
         height: 236px;
+    }
+
+    .pictureTwo{
+        width: 344px;
+        height: 231px;
+        margin-left: 16px;
+        margin-right: 78px;
     }
 }

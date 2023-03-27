@@ -1,9 +1,8 @@
-/*
-1 задача
+
+//1task
 let str = 'js';
 str = str.toUpperCase();
 console.log(str); 
-*/
 
 //2 ЗАДАЧА
 const words = ['примитивы как объекты', 'сдать домашку', 'встроенные объекты', 'объект', 'шпаргалка'];
@@ -80,4 +79,21 @@ let hour = myDate.getHours();
 let minute = myDate.getMinutes();
 let second = myDate.getSeconds();
 console.log(fullDate+",Время: " + hour + ":" + minute + ":" + second);
-
+ 
+//11 task _ Работа с макетом
+function gameTwo() {
+let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+gameTwo = gameTwo.sort(() => Math.random() - 0.5);
+alert(gameTwo);
+let answer = prompt('Чему равнялся первый элемент массива?');
+let answer2 = prompt('Чему равнялся последний элемент массива?');
+if (answer && answer2 === gameTwo ) {
+  alert('вы угдали оба элемента');
+} else if(answer === gameTwo ) {
+  alert('Вы были близки к победе!');
+}else if(answer2 === gameTwo ) {
+  alert('Вы были близки к победе!');
+}else if (answer && answer2 !== gameTwo ) {
+  alert('не угдали');
+}
+}//почему везде пишет не угалал(((
