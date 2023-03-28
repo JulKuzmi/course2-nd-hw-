@@ -3,7 +3,6 @@
 let str = 'js';
 str = str.toUpperCase();
 console.log(str); 
-
 //2 ЗАДАЧА
 const words = ['примитивы как объекты', 'сдать домашку', 'встроенные объекты', 'объект', 'шпаргалка'];
 const search = 'объект';
@@ -27,7 +26,6 @@ console.log(searchTwo(['арбуз', 'кот', 'архипелаг', 'объек
 //З ЗАДАЧА
 let num = 32.58884;
 console.log(Math.round(num, -1));// Округление к ближайшему
-console.log(Math.floor(num, -1));// Округление к меньшему
 console.log(Math.ceil(num, -1));// большему целому
 
 //4 ЗАДАЧА
@@ -58,6 +56,25 @@ console.log(random);
 let min = Number(prompt('Введите первое целое число'));
 let max = Number(prompt('Введи второе целое число'));
 console.log(Math.round(Math.random()*(max - min)) + min);
+//7 var2
+function getRandomIntegralNumber(a,b){
+  if(a>b){
+      c=b;
+      b=a;
+      a=c;
+  };
+  let arr =[];
+  for(i=0; i <=(b-a); i++) {
+      arr[i]=[Math.random(), a+i]};
+  return arr.sort()[1][3]}
+  console.log();
+//var 3
+function newArr(x,y) {
+  let array =[];
+  for(let j =x; j<= y; j++)
+  array.push(j);
+  return array;
+}
 //8 ЗАДАЧА
 let myDate = new Date(2023, 2, 23, 20, 34, 35, 11); 
 console.log(myDate);
@@ -79,7 +96,7 @@ let hour = myDate.getHours();
 let minute = myDate.getMinutes();
 let second = myDate.getSeconds();
 console.log(fullDate+",Время: " + hour + ":" + minute + ":" + second);
- 
+
 //11 task _ Работа с макетом
 function gameTwo() {
 let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
@@ -87,13 +104,47 @@ gameTwo = gameTwo.sort(() => Math.random() - 0.5);
 alert(gameTwo);
 let answer = prompt('Чему равнялся первый элемент массива?');
 let answer2 = prompt('Чему равнялся последний элемент массива?');
-if (answer && answer2 === gameTwo ) {
+if (answer && answer2 === gameTwo) {
   alert('вы угдали оба элемента');
-} else if(answer === gameTwo ) {
+} else if(answer === gameTwo) {
   alert('Вы были близки к победе!');
-}else if(answer2 === gameTwo ) {
+}else if(answer2 === gameTwo) {
   alert('Вы были близки к победе!');
 }else if (answer && answer2 !== gameTwo ) {
   alert('не угдали');
 }
-}//почему везде пишет не угалал(((
+}
+/*
+function gameTwo() {
+  let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  gameTwo = gameTwo.sort(() => Math.random() - 0.5);
+  alert(gameTwo);
+  let answer = prompt('Чему равнялся первый элемент массива?');
+  let answer2 = prompt('Чему равнялся последний элемент массива?');
+  if (answer === gameTwo[0]) {
+    alert('вы угдали оба элемента');
+  } else if(answer2 === gameTwo[0]) {
+    alert('Вы были близки к победе!');
+  }else if(answer2 === gameTwo[0]) {
+    alert('Вы были близки к победе!');
+  }else if (answer && answer2 !== gameTwo[0] ) {
+    alert('не угдали');
+  }
+  }*/
+
+  function gameTwo() {
+    let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    gameTwo = gameTwo.sort(() => Math.random() - 0.5);
+    alert(gameTwo);
+    let answer = prompt('Чему равнялся первый элемент массива?');
+    let answer2 = prompt('Чему равнялся последний элемент массива?');
+    if (answer && answer2 === gameTwo[0]) {
+      alert('вы угдали оба элемента');
+    } else if(answer === gameTwo[0]) {
+      alert('Вы были близки к победе!');
+    }else if(answer2 === gameTwo[0]) {
+      alert('Вы были близки к победе!');
+    }else if (answer && answer2 !== gameTwo[0]) {
+      alert('не угдали');
+    }
+    }
