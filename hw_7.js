@@ -99,52 +99,17 @@ console.log(fullDate+",Время: " + hour + ":" + minute + ":" + second);
 
 //11 task _ Работа с макетом
 function gameTwo() {
-let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-gameTwo = gameTwo.sort(() => Math.random() - 0.5);
-alert(gameTwo);
-let answer = prompt('Чему равнялся первый элемент массива?');
-let answer2 = prompt('Чему равнялся последний элемент массива?');
-if (answer && answer2 === gameTwo) {
-  alert('вы угдали оба элемента');
-} else if(answer === gameTwo) {
-  alert('Вы были близки к победе!');
-}else if(answer2 === gameTwo) {
-  alert('Вы были близки к победе!');
-}else if (answer && answer2 !== gameTwo ) {
-  alert('не угдали');
-}
-}
-/*
-function gameTwo() {
   let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
   gameTwo = gameTwo.sort(() => Math.random() - 0.5);
   alert(gameTwo);
   let answer = prompt('Чему равнялся первый элемент массива?');
   let answer2 = prompt('Чему равнялся последний элемент массива?');
-  if (answer === gameTwo[0]) {
-    alert('вы угдали оба элемента');
-  } else if(answer2 === gameTwo[0]) {
-    alert('Вы были близки к победе!');
-  }else if(answer2 === gameTwo[0]) {
-    alert('Вы были близки к победе!');
-  }else if (answer && answer2 !== gameTwo[0] ) {
-    alert('не угдали');
+  if (answer === gameTwo[0] && answer2 === gameTwo[gameTwo.length-1]) {
+   alert('Вы угадали оба элемента!');
+  } else if(answer === gameTwo[0] || answer2 === gameTwo[gameTwo.length-1]) {
+   alert('Вы были близки к победе!');
+  } else {
+   alert('Вы не угадали ни одного элемента!');
   }
-  }*/
+ }
 
-  function gameTwo() {
-    let gameTwo = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    gameTwo = gameTwo.sort(() => Math.random() - 0.5);
-    alert(gameTwo);
-    let answer = prompt('Чему равнялся первый элемент массива?');
-    let answer2 = prompt('Чему равнялся последний элемент массива?');
-    if (answer && answer2 === gameTwo[0]) {
-      alert('вы угдали оба элемента');
-    } else if(answer === gameTwo[0]) {
-      alert('Вы были близки к победе!');
-    }else if(answer2 === gameTwo[0]) {
-      alert('Вы были близки к победе!');
-    }else if (answer && answer2 !== gameTwo[0]) {
-      alert('не угдали');
-    }
-    }
