@@ -1,3 +1,4 @@
+/*
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let a = 0; a < numbs.length; a++) {
   console.log(numbs[a]);
@@ -78,3 +79,4 @@ console.log(tasksA);
 const filtr =[1, -2, 3, -8];
 const result = filtr.filter(item => item <-1);
 console.log(result);
+*/
