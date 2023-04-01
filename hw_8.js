@@ -16,6 +16,13 @@ function array(arr, callback) {
   const result = array([1,2,4], arrayMult);
   const result2 = array([1,2,3], arraySum);
 
+// task1 var 2 .reduce();
+const arrayTwo =[1,3,4,7,8,2];
+const sum = arrayTwo.reduce(function(arr, item, val){
+  return arr + val;
+})//?
+
+console.log(sum);
 //task 2
 const users = [
     {name: 'Jon', age: 22},
@@ -39,6 +46,19 @@ const users = [
 //  return(array2.map(Number).filter(item =>
 //    isNaN(item) === false));
 //}
+
+//task 3
+const arr = [1, '4', 9, 'two'];
+function each(arr, func, element){
+  arr.reverse();
+  func(arr,element);
+}
+
+function toNumberArr(arr, element) {
+  arr.map(item => item.match(). join(''));
+  arr.map(item => item.match(). join(''). join());
+}
+const resul = (each, toNumberArr);
 
 //task 4
 const interval = setInterval(() => {
