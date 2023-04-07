@@ -17,10 +17,22 @@ function array(arr, callback) {
   const result2 = array([1,2,3], arraySum);
 
 // task1 var 2 .reduce();
-const arrayTwo =[1,3,4,7,8,2];
-const sum = arrayTwo.reduce(function(arr, item, val){
-  return arr + val;
-})//?
+// Создаем функцию, которая принимает массив и колбек
+const getResult = (arr, callback) => {
+  // Возвращаем результат вызова колбека
+  return callback(arr);
+};
+// Создаем функцию, которая принимает массив
+const getSum = (arr) => { 
+  // Возвращаем результат вызова метода reduce, 
+  // который принимает колбек и начальное значение
+  // acc - суммируемое значение, item - текущий элемент массива
+  return arr.reduce((acc, item) => acc + item, 0);
+};
+
+const getMult = (arr) => {
+  return arr.reduce((acc, item) => acc * item, 1);
+};
 
 console.log(sum);
 //task 2
@@ -37,28 +49,23 @@ const users = [
   console.log(users);
 
 //task 3
-//function each(arr, callback) {
-//  const arr = [1, '4', 9, 'two'];
-//  arr.reverse();
-//}
-//arr=[1, '4', false, 9, 'two'];
-//function toNumberArr() {
-//  return(array2.map(Number).filter(item =>
-//    isNaN(item) === false));
-//}
+// Создаем функцию, которая принимает массив и колбек
+const each = (arr, callback) => {
+  // Возвращаем результат вызова колбека
+  return callback(arr);
+};
 
-//task 3
-const arr = [1, '4', 9, 'two'];
-function each(arr, func, element){
-  arr.reverse();
-  func(arr,element);
-}
+// Создаем функцию, которая принимает массив и отфильтровывает его
+const toNumberArr = (arr) => {
+  // Возвращаем результат вызова метода filter,
+  // Если результат приведения к числу не NaN, то вернет true
+  // потому что NaN - это false в булевом значении
+  return arr.filter((item) => Number(item));
+};
 
-function toNumberArr(arr, element) {
-  arr.map(item => item.match(). join(''));
-  arr.map(item => item.match(). join(''). join());
-}
-const resul = (each, toNumberArr);
+const reverseArr = (arr) => {
+  return arr.reverse();
+};
 
 //task 4
 const interval = setInterval(() => {
